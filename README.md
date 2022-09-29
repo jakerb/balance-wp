@@ -2,13 +2,13 @@
 A standard WP install with plugins.
 
 ## Folder Structure
-Folders noted in the description below assumes / is the root of the WP install.
+Folders noted in the description below assumes / is the root of the WP install. It it also assumed that the data within each WP install is different from site to site, some sites have either a different theme/plugin/config, more, or the same with different content.
 
 | Key | Description |
 |-|-|
 |[1]| Changes only with Core WP Updates|
 |[2]| Dynamic content changed regularly, either automatically or manually |
-|[3]| Contains secrets, passwords, credentials or server specific data
+|[3]| Contains secrets, passwords, credentials or server specific data |
 
 ```
 /wp-admin/ [1]
