@@ -19,7 +19,7 @@ Folders noted in the description below assumes / is the root of the WP install. 
 ----- elementor/ [2]
 ----- gravity_forms/ [2]
 /wp-includes [1]
-/.htaccess [2]
+/.htaccess [2][3]
 /wp-activate.php [1]
 /wp-blog-header.php [1]
 /wp-comments-post.php [1]
