@@ -36,4 +36,6 @@ Folders noted in the description below assumes / is the root of the WP install.
 /xmlrpc.php [1]
 ```
 
+Within `wp-content/themes` each theme is saved in it's own folder, changes can be made manually by the developer to the `functions.php` (usually in `wp-content/themes/{my_theme}/functions.php`) but when a theme is updated it will change surrounding files and potentially resets the `functions.php` file. In this use-case WordPress added a redundancy where a theme could have a child folder (`{my_theme}-child`) in which the parent would inherit it's files. This would allow changes made in the child to be kept even when the parent theme is updated.
 
+With this in mind, if the developer made changes to `wp-content/my_theme/functions.php` they would be reverted when the theme was updated (although it's not uncommon to make changes to the parent theme) where-as changes to `wp-content/my_theme-child/functions.php` would remain untouched on theme updated and WordPress will include the child files when loading the parent theme.
